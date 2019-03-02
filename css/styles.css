@@ -43,6 +43,14 @@ main {
 	text-align: center;
 }
 
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+
+}
+
 main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
