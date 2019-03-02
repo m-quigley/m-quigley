@@ -5,11 +5,7 @@ services:
 before_install: 
   - docker build -t thenullone/portfolio-website .
 
-script: 
-  - docker run -p 80:80 thenullone/portfolio-website
-
 after_success: 
-  - docker build -t thenullone/portfolio-website .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push thenullone/portfolio-website
 
